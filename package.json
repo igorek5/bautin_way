@@ -1,7 +1,7 @@
 {
-  "name": "wey",
+  "name": "way",
   "private": true,
-  "description": "Проект на грейдирование от HTML academy «wey»",
+  "description": "Грейдирование «way»",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",

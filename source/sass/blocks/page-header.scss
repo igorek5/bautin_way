@@ -1,0 +1,51 @@
+.page-header__wrapper {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 38px 60px 30px;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  padding: 18px 16px 14px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:not(a[href]) {
+    pointer-events: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 21px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 1px;
+  }
+}
+
+.page-header__logo-image {
+  width: 44px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    width: 57px;
+    height: 23px;
+  }
+}

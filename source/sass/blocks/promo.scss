@@ -1,0 +1,172 @@
+.promo {
+  @media (min-width: $tablet-width) {
+    min-height: 344px;
+    padding-top: 60px;
+    padding-bottom: 83px;
+
+    color: $color-white;
+
+    background-color: $color-gray;
+    background-image: url("../img/content/mountains-teblet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/mountains-teblet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 186px 60px 297px;
+
+    background-image: url("../img/content/mountains-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/mountains-desktop@2x.jpg");
+    }
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1023px;
+  }
+}
+
+.promo__title-wrapper {
+  min-height: 235px;
+  padding: 82px 0 81px;
+
+  background-color: $color-gray;
+  background-image: url("../img/content/mountains@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/mountains@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+    margin-bottom: 15px;
+    padding: 0;
+
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.promo__title {
+  width: 250px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 6px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    padding: 0;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 27px;
+    margin-left: auto;
+
+    font-size: 55px;
+    line-height: 80px;
+    text-align: left;
+    letter-spacing: -1px;
+  }
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 15px;
+  line-height: 27px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+  }
+}
+
+.promo__container {
+  max-width: 510px;
+  margin: 0 auto;
+  padding: 20px 16px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 400px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: auto;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.promo__button {
+  position: relative;
+
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 57px;
+    margin-left: auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 40px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url("../img/svg/arrow-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 14px;
+
+    @media (min-width: $desktop-width) {
+      top: 32px;
+    }
+  }
+}
