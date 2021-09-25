@@ -1,5 +1,10 @@
 .container {
   min-width: $mobile-width;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1290px;
+    padding: 0 60px;
+  }
 }
