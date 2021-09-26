@@ -1,4 +1,4 @@
-.country {
+.catalog {
   padding-top: 61px;
 
   text-align: center;
@@ -12,7 +12,7 @@
   }
 }
 
-.country__title {
+.catalog__title {
   max-width: 400px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -55,7 +55,7 @@
   }
 }
 
-.country__text {
+.catalog__text {
   max-width: 540px;
   margin: 0 auto;
   margin-bottom: 19px;
@@ -78,7 +78,7 @@
   }
 }
 
-.country__list {
+.catalog__list {
   max-width: 350px;
   margin: 0 auto;
   padding: 0;
@@ -104,7 +104,7 @@
   }
 }
 
-.country__image {
+.catalog__image {
   width: 100%;
   height: 425px;
 
@@ -115,10 +115,14 @@
   }
 }
 
-.country__item {
+.catalog__item {
   position: relative;
 
   margin-bottom: 35px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     width: 288px;
@@ -156,16 +160,16 @@
   }
 }
 
-.country__link {
+.catalog__link {
   display: block;
   width: 100%;
 
   cursor: pointer;
 }
 
-.country__card-title {
+.catalog__card-title {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 50%;
 
   width: 215px;
@@ -181,12 +185,12 @@
   transform: translate(-50%);
 }
 
-.country__card-overlay {
+.catalog__card-overlay {
   display: none;
 }
 
-.country__link:hover .country__card-overlay,
-.country__link:focus .country__card-overlay {
+.catalog__link:hover .catalog__card-overlay,
+.catalog__link:focus .catalog__card-overlay {
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
@@ -201,7 +205,7 @@
   }
 }
 
-.country__details {
+.catalog__details {
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 170px;

@@ -1,0 +1,85 @@
+.comments {
+  margin-bottom: 80px;
+  padding-top: 51px;
+
+  text-align: center;
+
+  background-color: $color-gray;
+  background-image: url("../img/content/mountains-comment@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/mountains-comment@2x.jpg");
+  }
+}
+
+.comments__wrapper {
+  position: relative;
+
+  width: 268px;
+  margin: 0 auto;
+  padding: 31px 24px 53px;
+  padding-bottom: 0;
+
+  background-color: $color-white;
+}
+
+.comment__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+
+    width: 68px;
+    height: 1px;
+
+    background-color: $color-light-red;
+    transform: translate(-50%);
+  }
+}
+
+.comment__text {
+  margin: 0;
+
+  font-size: 13px;
+
+  opacity: 0.7;
+}
+
+.comments__user {
+  position: relative;
+  bottom: -33px;
+
+  margin-top: -15px;
+}
+
+.comments__avatar {
+  display: block;
+  width: 37px;
+  height: 38px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  border-radius: 50%;
+}
+
+.comments__name {
+  margin: 0;
+  padding-left: 7px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
