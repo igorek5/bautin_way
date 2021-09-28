@@ -1,0 +1,197 @@
+.connection {
+  padding: 50px 16px;
+
+  text-align: center;
+
+  background-color: $color-light;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 21px 74px;
+
+    background-color: $color-orange;
+    background-image: url("../img/content/sea@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/sea@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    padding-right: 60px;
+    padding-left: 60px;
+
+    background: none;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+}
+
+.connection__background {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    z-index: -1;
+
+    width: 844px;
+
+    background: none;
+    background-color: $color-orange;
+    background-image: url("../img/content/sea-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/sea-desktop@2x.jpg");
+    }
+  }
+}
+
+.connection__wrapper {
+  max-width: 658px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+
+    background-color: $color-white;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba($color-special-dark, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 656px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.connection__question {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: $color-special-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.connection__text {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-special-dark;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.connection__block {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.connection__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 16px 15px 15px;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-family: $font-family--montserrat;
+  color: $color-special-dark;
+
+  border: 1px solid rgba($color-dark, 0.3);
+
+  &--phone {
+    padding-left: 51px;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-special-dark;
+  }
+}
+
+.connection__item {
+  position: relative;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-special-dark;
+
+  &--phone::after {
+    content: "+7";
+    position: absolute;
+    top: 18px;
+    left: 26px;
+  }
+
+  &--phone::before {
+    content: "*";
+    position: absolute;
+    top: 9px;
+    left: 16px;
+
+    color: $color-light-red;
+  }
+}
+
+.connection__input.is-invalid {
+  border-color: $color-light-red;
+}
+
+.connection__input-message {
+  display: none;
+}
+
+.connection__input.is-invalid + .connection__input-message {
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  display: block;
+
+  font-size: 12px;
+  line-height: 15px;
+  color: $color-light-red;
+}
+
+.connection__button {
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 176px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
+}

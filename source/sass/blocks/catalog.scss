@@ -120,10 +120,6 @@
 
   margin-bottom: 35px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @media (min-width: $tablet-width) {
     width: 288px;
     margin-right: 40px;

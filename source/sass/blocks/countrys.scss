@@ -1,5 +1,14 @@
 .countrys {
   padding: 0 16px 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 21px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 370px;
+    padding: 10px 0 30px;
+  }
 }
 
 .countrys__list {
@@ -8,6 +17,10 @@
 
   list-style: none;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .countrys__item {
@@ -27,9 +40,32 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+
     font-weight: 600;
     font-size: 30px;
     line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    margin-bottom: 48px;
+
+    font-size: 55px;
+    line-height: 90px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -18px;
+      left: 0;
+
+      width: 175px;
+      height: 3px;
+
+      background-color: $color-light-red;
+    }
   }
 }
 
@@ -40,9 +76,31 @@
   font-size: 15px;
 
   opacity: 0.7;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .countrys__button {
   margin: 0 auto;
   padding-left: 63px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 41px;
+    padding-left: 41px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    margin: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }

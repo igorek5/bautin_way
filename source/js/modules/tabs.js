@@ -1,5 +1,6 @@
 const tabsButton = document.querySelectorAll(".info__tab-link");
 const tabsItem = document.querySelectorAll(".countrys__item");
+const commentsItem = document.querySelectorAll(".comments__item");
 
 const classControl = (items, indexElement) => {
   items.forEach((el, index) => {
@@ -16,6 +17,7 @@ const setTabsControl = () => {
       evt.preventDefault();
       classControl(tabsButton, index);
       classControl(tabsItem, index);
+      classControl(commentsItem, index);
     });
   })
 }

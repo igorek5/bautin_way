@@ -228,7 +228,9 @@
     }
 
     &:active {
-      opacity: 0.3;
+      color: $color-light-red;
+
+      opacity: 0.6;
     }
   }
 }
@@ -241,5 +243,22 @@
 
     width: 30px;
     height: 30px;
+
+    stroke: $color-special-dark;
+  }
+}
+
+.main-nav__phone:hover .main-nav__phone-icon,
+.main-nav__phone:focus .main-nav__phone-icon {
+  @media (min-width: $desktop-width) {
+    stroke: $color-light-red;
+  }
+}
+
+.main-nav__phone:active .main-nav__phone-icon {
+  @media (min-width: $desktop-width) {
+    color: $color-light-red;
+
+    opacity: 0.6;
   }
 }

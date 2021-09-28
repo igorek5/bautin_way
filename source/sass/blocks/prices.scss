@@ -1,0 +1,396 @@
+.prices {
+  padding: 32px 16px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.prices__block {
+  margin-bottom: 42px;
+
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 260px;
+    padding-top: 113px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    width: 306px;
+  }
+}
+
+.prices__title {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    margin-bottom: 47px;
+
+    font-size: 55px;
+    line-height: 90px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+
+      width: 175px;
+      height: 3px;
+
+      background-color: $color-light-red;
+    }
+  }
+}
+
+.prices__text {
+  margin: 0;
+  margin-bottom: 19px;
+
+  line-height: 27px;
+
+  opacity: 0.7;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
+}
+
+.prices__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 606px;
+    padding: 0;
+
+    grid-gap: 30px;
+  }
+
+  @media (min-width: $desktop-super-max-width) {
+    width: 770px;
+  }
+}
+
+.prices__contact {
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
+}
+
+.prices__contact-text {
+  display: block;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+
+
+  @media (min-width: $desktop-width) {
+    padding-left: 45px;
+
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+
+.prices__phone {
+  display: block;
+
+  font-size: 18px;
+  line-height: 32px;
+  color: $color-light-red;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    padding-left: 45px;
+
+    font-size: 20px;
+    color: $color-black;
+
+    &:hover,
+    &:focus {
+      color: $color-light-red;
+    }
+
+    &:active {
+      color: $color-light-red;
+
+      opacity: 0.6;
+    }
+  }
+}
+
+.prices__phone-icon {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: -4px;
+
+    display: block;
+
+    stroke: $color-light-red;
+  }
+}
+
+.prices__phone:active .prices__phone-icon {
+  opacity: 0.6;
+
+  stroke: $color-light-red;
+}
+
+.prices__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 27px 20px 0;
+
+  background-color: $color-white;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba($color-dark, 0.3);
+
+  &:hover {
+    box-shadow: inset 0 0 0 3px $color-light-red;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-super-max-width) {
+    width: 370px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+}
+
+.prices__item-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 21px;
+    margin-left: 21px;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+}
+
+.prices__title-item {
+  margin: 0;
+  margin-bottom: 7px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  color: $color-special-dark;
+
+  opacity: 0.7;
+
+  @media (min-width: $desktop-max-width) {
+    font-size: 28px;
+  }
+}
+
+.prices__cost {
+  margin-bottom: 13px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+
+  @media (min-width: $tablet-width) {
+    &--economical {
+      padding-right: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-max-width) {
+    &--economical {
+      padding-right: 0;
+    }
+  }
+}
+
+.prices__text-item {
+  margin: 0;
+  margin-bottom: 21px;
+  padding-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  border-bottom: 1px solid rgba($color-dark, 0.3);
+
+  @media (min-width: $desktop-max-width) {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+
+    text-align: start;
+  }
+}
+
+.prices__scroll {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+
+  list-style: none;
+
+  &--economical {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 19px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &--economical {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.prices__scroll-item {
+  position: relative;
+
+  margin-bottom: 8px;
+  padding-left: 30px;
+
+  font-size: 16px;
+  line-height: 32px;
+
+  &--economical {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    margin-bottom: 12px;
+
+    &--economical {
+      margin-bottom: 16px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 5px;
+
+    width: 14px;
+    height: 12px;
+
+    background-image: url("../img/svg/icon-item-red.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 12px;
+  }
+
+  &--economical::before {
+    left: 1px;
+  }
+}
+
+.prices__button {
+  margin-top: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 288px;
+  }
+
+  @media (min-width: $desktop-super-max-width) {
+    width: 310px;
+  }
+}
+
+
+.prices__item:hover .prices__title-item {
+  color: $color-light-red;
+
+  opacity: 1;
+}
+
+.prices__item:hover .prices__cost {
+  color: $color-light-red;
+}
+
+.prices__item:hover .prices__scroll-item::before {
+  background-image: url("../img/svg/icon-item.svg");
+}
