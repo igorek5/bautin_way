@@ -59,10 +59,11 @@
 }
 
 .connection__wrapper {
-  max-width: 658px;
+  max-width: 400px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    max-width: 658px;
     padding: 50px;
 
     background-color: $color-white;

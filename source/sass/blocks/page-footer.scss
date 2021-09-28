@@ -6,18 +6,33 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 81px;
-    padding-right: 21px;
-    padding-left: 21px;
+    padding: 81px 21px 53px;
 
     text-align: start;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    padding-top: 159px;
+  }
 }
 
-.page-footer__top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .page-footer__list-container {
@@ -36,8 +51,18 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 0;
     width: auto;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 330px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    min-width: 390px;
+    padding-right: 0;
   }
 }
 
@@ -57,6 +82,10 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
   }
 }
 
@@ -118,11 +147,25 @@
   border-bottom: 1px solid $color-additional;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 0;
+    flex-grow: 1;
     padding: 0;
     padding-right: 24px;
 
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border-right: 1px solid $color-additional;
+    border-left: 1px solid $color-additional;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    padding-right: 72px;
+    padding-left: 53px;
   }
 }
 
@@ -137,6 +180,12 @@
     padding-left: 39px;
 
     border-left: 1px solid $color-additional;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+
+    border: none;
   }
 }
 
@@ -178,6 +227,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+  }
 }
 
 .page-footer__phone-icon {
@@ -195,10 +248,25 @@
 .page-footer__corporate {
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    padding-top: 28px;
 
     text-align: center;
 
     border-top: 1px solid $color-additional;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-left: 15px;
+
+    text-align: start;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 57px;
+    padding-right: 10px;
   }
 }
 
